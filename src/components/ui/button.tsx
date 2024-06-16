@@ -44,7 +44,6 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
         return (
             <Comp
                 className={cn(buttonVariants({ variant, size, className }))}
-                ref={ref}
                 href={href} // Spread href for link scenarios
                 target={href ? "_blank" : undefined} // Open in a new tab if href is provided
                 rel={href ? "noopener noreferrer" : undefined} // Security for external links
